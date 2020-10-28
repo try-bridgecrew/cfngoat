@@ -610,6 +610,8 @@ Resources:
         - Key: Name
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-financials"
 
+    VersioningConfiguration:
+      Status: Enabled
   OperationsBucket:
     # not encrypted, no access logs
     Type: AWS::S3::Bucket
