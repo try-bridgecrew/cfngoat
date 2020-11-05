@@ -599,6 +599,8 @@ Resources:
 
   ### TODO - Custom Upload of insecure document
 
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: True
   FinancialsBucket:
     # not encrypted, no access logs, no versioning
     Type: AWS::S3::Bucket
