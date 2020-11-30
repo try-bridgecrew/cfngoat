@@ -19,3 +19,5 @@ If you want to provision another stack with a different environment:
 ```bash
 aws cloudformation create-stack --stack-name cfngoat2 --template-body file://cfngoat.yaml --region us-east-1 --parameters ParameterKey=Password,ParameterValue=MyPassword10 ParameterKey=Environment,ParameterValue=dev2 --capabilities CAPABILITY_NAMED_IAM
 ```
+
+TEST
