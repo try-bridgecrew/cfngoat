@@ -599,6 +599,11 @@ Resources:
 
   ### TODO - Custom Upload of insecure document
 
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          [0]:
+            ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
   FinancialsBucket:
     # not encrypted, no access logs, no versioning
     Type: AWS::S3::Bucket
