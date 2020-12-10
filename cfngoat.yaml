@@ -598,6 +598,10 @@ Resources:
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data"
 
   ### TODO - Custom Upload of insecure document
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
 
   FinancialsBucket:
     # not encrypted, no access logs, no versioning
