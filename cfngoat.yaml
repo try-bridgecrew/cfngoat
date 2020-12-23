@@ -206,6 +206,8 @@ Resources:
   #############
   ###  IAM  ###
   #############
+      VersioningConfiguration:
+        Status: Enabled
 
   User: 
     Type: AWS::IAM::User
