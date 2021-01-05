@@ -206,6 +206,10 @@ Resources:
   #############
   ###  IAM  ###
   #############
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
 
   User: 
     Type: AWS::IAM::User
