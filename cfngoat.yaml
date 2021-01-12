@@ -879,6 +879,9 @@ Resources:
       Properties:
         PublicAccessBlockConfiguration:
           BlockPublicAcls: True
+    yaml:AWS::KMS::Key:
+      Properties:
+        EnableKeyRotation: True
 Outputs:
   EC2PublicDNS:
     Description: Web Host Public DNS Name
