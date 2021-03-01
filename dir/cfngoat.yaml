@@ -35,6 +35,10 @@ Resources:
       Tags:
         - Key: Name
           Value: !Sub "my-data"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
 
 Outputs:
   EC2PublicDNS:
