@@ -35,6 +35,12 @@ Resources:
       Tags:
         - Key: Name
           Value: !Sub "my-data"
+  yaml:AWS::S3::Bucket:
+    Properties:
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
 
 Outputs:
   EC2PublicDNS:
