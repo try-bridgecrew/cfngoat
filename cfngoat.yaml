@@ -863,6 +863,9 @@ Resources:
     Properties:
       ServiceToken: !GetAtt CleanBucketFunction.Arn
       BucketName: !Ref LogsBucket
+    yaml:AWS::RDS::DBInstance:
+      Properties:
+        MultiAZ: True
 
 Outputs:
   EC2PublicDNS:
